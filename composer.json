@@ -1,0 +1,33 @@
+{
+  "name": "rudenich/php-mssql-to-mysql-converter",
+  "authors": [
+    {
+      "name": "Rudenko Nikolay",
+      "email": "rudenich@gmail.com"
+    }
+  ],
+  "description": "Database converter",
+  "type": "library",
+  "license": "MIT",
+  "0ersion":"1.0.0",
+
+  "require": {
+    "php": ">=5.3.0"
+  },
+  "require-dev":{
+    "phpunit/phpunit": "*"
+  },
+  "config": {
+    "process-timeout": 1800
+  },
+  "autoload":{
+    "psr-4": {
+      "DatabaseConverter\\": ["src/"]
+    }
+  },
+  "autoload-dev":{
+    "psr-4": {
+      "DatabaseConverter\\Tests\\": ["tests/"]
+    }
+  }
+}
